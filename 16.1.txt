@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+int i,j,n,a[i],count=0;
+printf("enter  n value");
+scanf("%d",&n);
+printf("enter a value");
+for(i=0;i<=n-1;i++)
+{
+scanf("\n%d",&a[i]);
+for(j=1;j<=a[i];j++)
+{
+if(a[i]%j==0)
+count++;
+}
+if(count==2)
+printf("\nprime number");
+else
+printf("\nnot a prime number");
+count=0;
+}
+return 0;
+}
